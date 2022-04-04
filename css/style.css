@@ -2,6 +2,7 @@
 body {
   font-family: roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.6;
 }
 
 img {
@@ -201,6 +202,7 @@ main {
 }
 .article_img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 .category {
@@ -216,6 +218,7 @@ main {
 }
 
 .about {
+  font-size: 14px;
   position: relative;
   z-index: 40;
 }
@@ -242,12 +245,14 @@ main {
   text-align: center;
 }
 .about_name_en {
-  font-size: 14px;
   text-align: center;
 }
 .about_text {
-  font-size: 14px;
   padding-top: 10px;
+}
+.about_comment {
+  border: #000 solid 1px;
+  padding: 10px;
 }
 
 .back_icon img {

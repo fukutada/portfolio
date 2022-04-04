@@ -9,26 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-<h1 class="header_title">Portsholio</h1>
-<p class="header_sub">Fukuta's portfolio</p>
 
-<div class="openbtn1"><span></span><span></span><span></span></div>
-<nav id="g-nav">
-<div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-<ul>
-<li><a href="#" class="nav_title">Works</a></li>  
-<li><a href="article1.html" class="nav_sub">My Calendar</a></li>  
-<li><a href="article2.html" class="nav_sub">blog</a></li>  
-<li><a href="article3.html" class="nav_sub">おやかんさま</a></li> 
-<li><a href="article4.html" class="nav_sub">漫画アプリUIデザイン</a></li> 
-<li><a href="article5.html" class="nav_sub">和風カフェサイトデザイン</a></li>  
-<li><a href="#" class="nav_title">About</a></li>  
-<img src="img/20488/20488.png" alt="" class="nav_icon">
-</ul>
-</div>
-</nav>
+    <!-- header -->
+    <header class="header">
+    <h1 class="header_title">Portsholio</h1>
+    <p class="header_sub">Fukuta's portfolio</p>
+
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+    <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+    <ul>
+    <li><a href="#" class="nav_title">Works</a></li>  
+    <li><a href="article1.html" class="nav_sub">My Calendar</a></li>  
+    <li><a href="article2.html" class="nav_sub">blog</a></li>  
+    <li><a href="article3.html" class="nav_sub">おやかんさま</a></li> 
+    <li><a href="article4.html" class="nav_sub">漫画アプリUIデザイン</a></li> 
+    <li><a href="article5.html" class="nav_sub">和風カフェサイトデザイン</a></li>  
+    <li><a href="#" class="nav_title">About</a></li>  
+    <img src="img/20488/20488.png" alt="" class="nav_icon">
+    </ul>
+    </div>
+    </nav>
     </header>
+
+    <!-- main -->
     <main>
         <h2 class="create_title">My Calendar</h2>
         <div class="flex">
@@ -68,56 +72,71 @@
                     <br>
                     <br>
                     の３つのうちのどれかで作成するという課題です。私は２を選びました。理由は、せっかくの進級展という機会なので、自分の将来やりたいことにつながること、またやったことのない分野に挑戦しようと思い、２を選びました。今回カレンダーを作った理由は、初心者でも作れるような難易度だったことです。初めての分野になるため、たくさんの記事を参考にしながら作成しました。
-                </p>
-<p class="work_title">1.準備</p>
-<p class="work_text">
-    まず最初に環境を作るために、ReactとNode.jsをダウンロードしました。ReactはCreate React Appを使用して環境を作りました。基本はFullcalendarを使用しました。コンポーネントをダウンロードするためにはnpmを使用して、ターミナルで管理しました。これを作るまでに学んでいた範囲はHTMLとCSS、JavaScriptまでだったので、書き方などは調べながらの制作になりました。使ったコンポーネントは、
-<br><br>
-    @fullcalendar/react <br>
-    @fullcalendar/daygrid <br>
-    fullcalendar/timegrid <br>
-    @fullcalendar/interaction <br>
-    react-datepicker <br>
-    date-fns/locale/ja <br><br>
-    です。
-    
-    class App extends Component を親コンポーネントとして使用しています。
-</p>
-<p class="work_title">2.機能</p>
-<img src="img/calendar/calendar_main.png" alt="">
-<p class="work_text">
-    カレンダー上部には表示されている月、todayボタンと月移動ボタンが設定されています。他の月のページに移動した後でも、todayボタンを押すことで今日の日付のあるページに戻ります。カレンダー上でクリックもしくはドラッグすることで、予定を設定する日付を取得する事ができます。
-</p>
-<div class="work_flex">
-    <img src="img/calendar/calendar_main.png" alt="" class="work_img3">
-    <img src="img/calendar/calendar_sub4.png" alt="" class="work_img3_sub">
-    <img src="img/calendar/calendar_main2.png" alt=" "class="work_img3">
-</div>
-<p class="work_title">入力画面</p>
-<div class="work_flex">
-    <img src="img/calendar/calendar_sub.png" alt="" class="work_img2">
-    <img src="img/calendar/calendar_sub2.png" alt="" class="work_img2">
-</div>
-    <p class="work_text">
-        予定入力画面で開始時間、終了時間をクリックすることでも日付を設定できます。メモは任意ですが、予定の内容を書き込むことができます。設定した予定をクリックすることで、予定変更画面になり、予定の変更と削除ができます。またDatePickerの都合で終了時間が開始時間より早い日時に設定できてしまいますが、その場合アラームで時間設定がおかしいことを教えてくれます。
-    </p>
-  <p class="work_title">3.公開</p>
-  <p class="work_text">
-作品の公開にはまずGithubにレポジトリを作り、Netlifyと連携して公開しています。GithubへのアップロードはGithub DesktopとVScodeを使っています。
-  </p>
+                    </p>
+                    <p class="work_title">1.準備</p>
+                    <p class="work_text">
+                        まず最初に環境を作るために、ReactとNode.jsをダウンロードしました。ReactはCreate React Appを使用して環境を作りました。基本はFullcalendarを使用しました。コンポーネントをダウンロードするためにはnpmを使用して、ターミナルで管理しました。これを作るまでに学んでいた範囲はHTMLとCSS、JavaScriptまでだったので、書き方などは調べながらの制作になりました。使ったコンポーネントは、
+                    <br><br>
+                        @fullcalendar/react <br>
+                        @fullcalendar/daygrid <br>
+                        fullcalendar/timegrid <br>
+                        @fullcalendar/interaction <br>
+                        react-datepicker <br>
+                        date-fns/locale/ja <br><br>
+                        です。
+                        
+                        class App extends Component を親コンポーネントとして使用しています。
+                    </p>
+                    <p class="work_title">2.機能</p>
+                    <div class="work_flex">
+                        <img src="img/calendar/calendar_main.png" alt="" class="work_img2">
+                        <img src="img/calendar/calendar_sub.png" alt="" class="work_img2">
+                    </div>
+                    <p class="work_text">
+                        画面左側が<strong>カレンダー画面</strong>になります。カレンダー上部には表示されている月、todayボタンと月移動ボタンが設定されています。他の月のページに移動した後でも、todayボタンを押すことで今日の日付のあるページに戻ります。今日の日付は黄色に強調して表示されています。画面左側が<strong>予定入力と変更画面</strong>になります。
+                    </p>
+                    <ul class="work_ul">
+                        <li class="work_li">カレンダー上で予定を入れたい範囲をドラッグで選択。または予定入力画面で日付を選択する。</li>
+                        <li class="work_li">予定の主なタイトル（旅行、食事など）を記入する。</li>
+                        <li class="work_li">任意でメモに予定の詳細を記入する。</li>
+                        <li class="work_li">保存ボタンを押すことで予定がカレンダー上に表示される。</li>
+                    </ul>
+                    <div class="work_flex">
+                        <img src="img/calendar/calendar_main.png" alt="" class="work_img3">
+                        <img src="img/calendar/calendar_sub4.png" alt="" class="work_img3_sub">
+                        <img src="img/calendar/calendar_main2.png" alt=" "class="work_img3">
+                    </div>
+                    <p class="work_title">入力画面</p>
+                    <div class="work_flex">
+                        <img src="img/calendar/calendar_sub.png" alt="" class="work_img2">
+                        <img src="img/calendar/calendar_sub2.png" alt="" class="work_img2">
+                    </div>
+                        <p class="work_text">
+                            予定入力画面で開始時間、終了時間をクリックすることでも日付を設定できます。メモは任意ですが、予定の内容を書き込むことができます。設定した予定をクリックすることで、予定変更画面になり、予定の変更と削除ができます。またDatePickerの都合で終了時間が開始時間より早い日時に設定できてしまいますが、その場合アラームで時間設定がおかしいことを教えてくれます。
+                        </p>
+                    <p class="work_title">3.公開</p>
+                    <p class="work_text">
+                    作品の公開にはまずGithubにレポジトリを作り、Netlifyと連携して公開しています。GithubへのアップロードはGithub DesktopとVScodeを使っています。
+                    </p>
 
+                    <p class="work_title">4.感想</p>
+                        <p class="work_text">
+                            今回の作品は、初めての分野に挑戦してみた作品だったので知らないことを調べながらの制作になりました。そもそもアプリ制作自体が初めてだったので環境の作り方の勉強からになりました。初めての仕組みや言葉ばかりで、詰まることも多々ありましたがカレンダーとして機能するようになりました。
+                        </p>
             </section>
-            <div id="js-scroll-top" class="scroll-top">TOP</div>
+
+    <div id="js-scroll-top" class="scroll-top">TOP</div>
            
-         </main>
+    </main>
 
-    <footer>
-       
-<small>@Fukuta Shouya</small>
-
+    <!-- footer -->
+    <footer>  
+        <small>@Fukuta Shouya</small>
     </footer>
+
+    <!-- script -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
-<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
-<script src="script.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
