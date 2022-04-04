@@ -190,6 +190,7 @@ header{
 // index
 main{
     @include inner();
+    //背景画像より上に来るようにする
     position: relative;
     z-index: 5;
     
