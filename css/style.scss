@@ -484,10 +484,7 @@ text-align: center;
     .main{
         z-index: 50;
     }
-    .Works{
-        //横並び表示
-        @include flex( );
-    }
+   
 
     .caption{
         //記事タイトル
@@ -496,14 +493,11 @@ text-align: center;
     }
     .article{
         max-width: 600px;
-        width: 45%;
         padding: 40px 20px;
-        border-radius: 60px;
         text-align: center;
-        box-shadow: 0 6px 9px #000;
+        @include flex( );
         &_link{
         padding: 20px;
-    
         }
         &_img{
             width: 90%;
@@ -511,10 +505,10 @@ text-align: center;
             max-width: 400px;
             margin: 0 auto;
         }
-        &_shadow{
-            border-radius: 60px;
-        box-shadow: 0 6px 9px #000;
+        &_sub{
+            width: 50%;
         }
+       
     }
     .category{
         &_text{
