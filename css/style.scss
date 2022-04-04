@@ -355,6 +355,7 @@ main{
     &_text{
         padding: 20px;
         margin: 40px 0;
+        //記事本文の領域表示
         border-left: #000 1px solid;
         border-right: #000 1px solid;
         background-color: #eee
@@ -364,21 +365,23 @@ main{
        margin: 0 auto;
     }
     &_samune{
+        //記事内のサムネ
         margin: 20px 0;
     }
     &_img{
-        width: 80%;
+        //記事内の画像
+        width: 100%;
         display: block;
         margin: 0 auto;
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    //flex 　2つ
+    //flex 　画像2つ
     &_img2{
         width: 50%;
         max-width: 300px;
     }
-    // flex 3つ
+    // flex 画像3つ
     &_img3{
         width: 33%;
         max-width: 400px;
@@ -386,7 +389,7 @@ main{
             max-width: 100px;
         }
     }
-    //flex　５つ
+    //flex　画像５つ
     &_img5{
         max-width: 18%;
         margin-bottom: 40px;
@@ -419,7 +422,6 @@ color: #fff;
 padding: 40px 0;
 margin-top: 40px;
 text-align: center;
-position: relative;
 }
 
 /*メディアクエリ（デスクトップ表示）*/
@@ -444,8 +446,10 @@ position: relative;
     }
 
     .back_icon img{
+       //携帯のときは表示しない
        display: none;
     }
+
     .flex{
         &_dis{
             margin-top: 20px;
@@ -480,10 +484,12 @@ position: relative;
         z-index: 50;
     }
     .Works{
+        //横並び表示
         @include flex( );
     }
 
     .caption{
+        //記事タイトル
         font-size: 60px;
         opacity: 0.7;
     }
@@ -511,7 +517,7 @@ position: relative;
     }
     .category{
         &_text{
-            background-color: rgba(167,80,240,0.35);
+            background-color: rgba(167,80,240,0.35);//透明度変換
             padding: 5px;
             border-radius: 20px;
             min-width: 50px;
@@ -520,19 +526,23 @@ position: relative;
     }
 
     .about{
+        //アイコン
         &_icon{
             max-width: 300px;
         }
         &_flex{
+        //アイコンと紹介文の横並び
         @include flex( );
         margin-top: 40px;
         }
+        //紹介文
         &_sub{
             width: 100%;
             max-width: 400px;
             padding: 80px 50px;
         }
     }
+
     .back_icon img{
         position: fixed ;
         bottom: 0px;
@@ -540,7 +550,8 @@ position: relative;
         opacity: 0.3;
         width: 200px;
         height: auto;
-         z-index: 1;
+        //最背面表示
+        z-index: 1;
     
     }
 }

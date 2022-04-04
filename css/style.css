@@ -339,7 +339,7 @@ main {
   margin: 20px 0;
 }
 .work_img {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   margin-top: 40px;
@@ -386,7 +386,6 @@ footer {
   padding: 40px 0;
   margin-top: 40px;
   text-align: center;
-  position: relative;
 }
 
 /*メディアクエリ（デスクトップ表示）*/
