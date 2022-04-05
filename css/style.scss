@@ -218,7 +218,7 @@ main{
     }
     //作品タイトル
     &_title{
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
         text-align: center;
         padding-top: 10px;
@@ -227,6 +227,7 @@ main{
     //作品サムネ
     &_img{
         width: 100%;
+        margin: 0 auto;
         vertical-align: bottom
         
     }
@@ -235,9 +236,10 @@ main{
 //作品のカテゴリー表示
 .category{
     @include flex(flex-start,center );
-    margin-top: 16px;
+    
     &_text{
         font-size: 12px;
+        margin-top: 10px;
         margin-left: 10px;
     }
 }
@@ -259,9 +261,8 @@ main{
     &_sub{
         max-width: 300px;
         background-color: #fff;
-        border-radius: 60px;
-        border: #000 1px solid;
-        box-shadow: 0 6px 9px;
+        border-left: #000 1px solid;
+        border-right: #000 1px solid;
         padding: 30px 10px;
         margin: 0 auto;
     }
@@ -418,15 +419,16 @@ main{
 
 // フッター
 footer{
-background-color: #000;
-color: #fff;
-padding: 40px 0;
-margin-top: 40px;
-text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 40px;
+    text-align: center;
 }
 
+//スマホ用
 /*メディアクエリ（デスクトップ表示）*/
-@media (max-width:700px){
+@media (max-width:800px){
     .header{
         top:0;
     }
@@ -462,21 +464,21 @@ text-align: center;
     }
 }
 
+//パソコン用
 /*メディアクエリ（デスクトップ表示）*/
-@media (min-width:700px){
+@media (min-width:800px){
 
 // index
     .header{
         position: fixed;
         top :0;
-        z-index: 900;
+        z-index: 999;
         &_title{
             padding-left: 30px
         }
     }
     main{
-        @include inner(1500px);
-        width: 80%;
+        @include inner(1100px);
         margin-top: 100px;
        
         
@@ -492,15 +494,15 @@ text-align: center;
         opacity: 0.7;
     }
     .article{
-
         position: relative;
         z-index: 40;
-        padding: 40px 20px;
+        padding: 20px 10px;
+        margin: 0 auto;
         text-align: center;
         background-color: #fff;
         &_flex{
-            @include flex( );
-            flex-wrap: nowrap;
+            @include flex(space-evenly,center );
+           
         }
         &_title{
             text-align: left;
@@ -509,18 +511,18 @@ text-align: center;
         padding: 20px;
         }
         &_img{
-            width: 90%;
-            box-shadow: none;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        &_sub{
             width: 50%;
+            max-width: 400px;
+            margin: 0;
+        }
+        &_info{
+            width: 40%;
+            max-width: 400px;
+            margin-left: 20px;
         }
        
     }
     .category{
-        flex-wrap: nowrap;
         &_text{
             background-color: rgba(167,80,240,0.35);//透明度変換
             padding: 5px;
