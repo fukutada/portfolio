@@ -206,6 +206,7 @@ main{
 
 // works　作品選択
 
+
 //作品
 .article{
     margin-bottom: 20px;
@@ -237,6 +238,7 @@ main{
         margin-top: 20px
     }
 }
+
 
 //作品のカテゴリー表示
 .category{
@@ -304,6 +306,7 @@ main{
 
 // base
 
+
 //　記事タイトル
 .create{
     &_title{
@@ -313,6 +316,7 @@ main{
         margin: 40px 0;
     }
 }
+
 
 //flex　記事情報
 .flex{
@@ -347,6 +351,7 @@ main{
     }
 }
 
+
 //work　記事本文、内容
 .work{
     margin:60px;
@@ -378,6 +383,24 @@ main{
         //記事内のサムネ
         margin: 20px 0;
     }
+    &_use{
+        max-width: 800px;
+        padding: 20px;
+        margin: 40px auto;
+        //記事本文の領域表示
+        border-left: #000 1px solid;
+        border-right: #000 1px solid;
+        background-color: #eee;
+        &_title{
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    &_ol{
+        padding-left: 20px;
+    }
     &_img{
         //記事内の画像
         width: 100%;
@@ -406,6 +429,8 @@ main{
     }
    
 }
+
+
   //トップに戻る
 .scroll-top {
     position: fixed;
@@ -434,6 +459,7 @@ footer{
     margin-top: 40px;
     text-align: center;
 }
+
 
 //スマホ用
 /*メディアクエリ（デスクトップ表示）*/
@@ -544,7 +570,7 @@ footer{
     .about{
         //アイコン
         &_icon{
-            max-width: 300px;
+            max-width: 400px;
         }
         &_flex{
         //アイコンと紹介文の横並び

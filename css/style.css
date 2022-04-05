@@ -345,6 +345,23 @@ main {
 .work_samune {
   margin: 20px 0;
 }
+.work_use {
+  max-width: 800px;
+  padding: 20px;
+  margin: 40px auto;
+  border-left: #000 1px solid;
+  border-right: #000 1px solid;
+  background-color: #eee;
+}
+.work_use_title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+.work_ol {
+  padding-left: 20px;
+}
 .work_img {
   width: 100%;
   display: block;
@@ -495,7 +512,7 @@ footer {
   }
 
   .about_icon {
-    max-width: 300px;
+    max-width: 400px;
   }
   .about_flex {
     display: flex;
