@@ -451,13 +451,21 @@ footer {
   }
 
   .article {
-    max-width: 600px;
+    position: relative;
+    z-index: 40;
     padding: 40px 20px;
     text-align: center;
+    background-color: #fff;
+  }
+  .article_flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+  }
+  .article_title {
+    text-align: left;
   }
   .article_link {
     padding: 20px;
@@ -472,6 +480,9 @@ footer {
     width: 50%;
   }
 
+  .category {
+    flex-wrap: nowrap;
+  }
   .category_text {
     background-color: rgba(167, 80, 240, 0.35);
     padding: 5px;

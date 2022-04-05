@@ -492,10 +492,19 @@ text-align: center;
         opacity: 0.7;
     }
     .article{
-        max-width: 600px;
+
+        position: relative;
+        z-index: 40;
         padding: 40px 20px;
         text-align: center;
-        @include flex( );
+        background-color: #fff;
+        &_flex{
+            @include flex( );
+            flex-wrap: nowrap;
+        }
+        &_title{
+            text-align: left;
+        }
         &_link{
         padding: 20px;
         }
@@ -511,6 +520,7 @@ text-align: center;
        
     }
     .category{
+        flex-wrap: nowrap;
         &_text{
             background-color: rgba(167,80,240,0.35);//透明度変換
             padding: 5px;
