@@ -233,7 +233,8 @@ main{
     }
     &_cap{
         font-size: 16px;
-        
+        text-align: left;
+        margin-top: 20px
     }
 }
 
@@ -361,8 +362,9 @@ main{
         border-bottom: #000 1px solid;
     }
     &_text{
+        max-width: 800px;
         padding: 20px;
-        margin: 40px 0;
+        margin: 40px auto;
         //記事本文の領域表示
         border-left: #000 1px solid;
         border-right: #000 1px solid;
@@ -422,6 +424,7 @@ main{
     cursor: pointer;
     opacity: 0.7;
   }
+  
 
 // フッター
 footer{
