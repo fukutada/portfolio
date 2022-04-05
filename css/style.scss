@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 //mixin
 @mixin inner($w:800px) {
     width: 90%;
@@ -22,12 +23,12 @@ body{
     line-height: 1.6;
 
 }
-
 img{
     width: 100%;
     margin: 0 auto;
     vertical-align: bottom;
 }
+
 
 // ヘッダー
 header{
@@ -53,6 +54,8 @@ header{
         text-decoration: none;
     }
 }
+
+
 /*========= ナビゲーションのためのCSS ===============*/
 
 #g-nav{
@@ -233,7 +236,7 @@ main{
         
     }
     &_cap{
-        font-size: 16px;
+        font-size: 24px;
         text-align: left;
         margin-top: 20px
     }
@@ -562,8 +565,7 @@ footer{
             background-color: rgba(167,80,240,0.35);//透明度変換
             padding: 5px;
             border-radius: 20px;
-            min-width: 50px;
-            
+            min-width: 50px;       
         }
     }
 
