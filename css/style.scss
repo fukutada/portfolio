@@ -231,6 +231,10 @@ main{
         vertical-align: bottom
         
     }
+    &_cap{
+        font-size: 16px;
+        
+    }
 }
 
 //作品のカテゴリー表示
@@ -242,6 +246,7 @@ main{
         margin-top: 10px;
         margin-left: 10px;
     }
+   
 }
 
 
@@ -267,11 +272,12 @@ main{
         margin: 0 auto;
     }
     &_name{
-        font-size: 24px;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
     &_en{
         text-align: center;
+        margin-bottom: 20px;
     }
     }
     &_text{

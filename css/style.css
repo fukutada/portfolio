@@ -205,6 +205,9 @@ main {
   margin: 0 auto;
   vertical-align: bottom;
 }
+.article_cap {
+  font-size: 16px;
+}
 
 .category {
   display: flex;
@@ -240,12 +243,13 @@ main {
   margin: 0 auto;
 }
 .about_name {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
 }
 .about_name_en {
   text-align: center;
+  margin-bottom: 20px;
 }
 .about_text {
   padding-top: 10px;
