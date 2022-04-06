@@ -283,7 +283,7 @@ main {
 
 .create_title {
   border-bottom: 3px solid #FFCE00;
-  font-size: 60px;
+  font-size: 52px;
   padding-left: 20px;
   margin: 40px 0;
 }
@@ -438,6 +438,11 @@ footer {
   .create_title {
     font-size: 32px;
     margin-top: 60px;
+  }
+
+  .article_cap {
+    text-align: center;
+    margin: 0;
   }
 
   .work_img {

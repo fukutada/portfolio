@@ -326,7 +326,7 @@ main{
 .create{
     &_title{
         border-bottom: 3px solid #FFCE00;
-        font-size: 60px;
+        font-size: 52px;
         padding-left: 20px;
         margin: 40px 0;
     }
@@ -492,6 +492,12 @@ footer{
              margin-top: 60px;
         }
     }
+    .article{
+        &_cap{
+            text-align: center;
+            margin: 0;
+        }
+    }
     .work{
         &_img{
              width: 100%;
@@ -530,14 +536,10 @@ footer{
     main{
         @include inner(1100px);
         margin-top: 100px;
-       
-        
     }
     .main{
         z-index: 50;
     }
-   
-
     .caption{
         //記事タイトル
         font-size: 60px;
@@ -551,8 +553,7 @@ footer{
         text-align: center;
         background-color: #fff;
         &_flex{
-            @include flex(space-evenly,center );
-           
+            @include flex(space-evenly,center );  
         }
         &_title{
             text-align: left;
