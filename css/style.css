@@ -206,7 +206,8 @@ main {
   vertical-align: bottom;
 }
 .article_cap {
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: bold;
   text-align: left;
   margin-top: 20px;
 }
@@ -221,6 +222,9 @@ main {
   font-size: 12px;
   margin-top: 10px;
   margin-left: 10px;
+}
+.category_text:first-child {
+  margin-left: 0;
 }
 
 .about {
@@ -241,7 +245,7 @@ main {
   background-color: #fff;
   border-left: #000 1px solid;
   border-right: #000 1px solid;
-  padding: 30px 10px;
+  padding: 20px 10px;
   margin: 0 auto;
 }
 .about_name {
@@ -253,12 +257,17 @@ main {
   text-align: center;
   margin-bottom: 20px;
 }
+.about_title {
+  font-size: 16px;
+}
 .about_text {
-  padding-top: 10px;
+  font-size: 12px;
+  padding-top: 8px;
 }
 .about_comment {
   border: #000 solid 1px;
   padding: 10px;
+  margin: 10px 0;
 }
 
 .back_icon img {
@@ -524,7 +533,7 @@ footer {
   .about_sub {
     width: 100%;
     max-width: 400px;
-    padding: 80px 50px;
+    padding: 20px 40px;
   }
 
   .back_icon img {
