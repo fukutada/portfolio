@@ -259,6 +259,7 @@ main {
 }
 .about_title {
   font-size: 16px;
+  margin-top: 10px;
 }
 .about_text {
   font-size: 12px;
