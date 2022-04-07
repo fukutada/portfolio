@@ -494,6 +494,9 @@ footer{
 @media (max-width:800px){
     .header{
         top:0;
+        &_link{
+            margin-left: 10px;
+        }
     }
     main{
         margin-top: 120px;
@@ -502,6 +505,11 @@ footer{
         position: fixed;
         top:30px;
         right: 10px
+    }
+    
+    #g-nav ul{
+        width: 100%;
+        max-width:200px;
     }
     .create{
         margin-top: 60px;
@@ -513,7 +521,7 @@ footer{
     .article{
         &_cap{
             text-align: center;
-            margin: 0;
+            margin: 10px 0 0 0;
         }
     }
     .work{
