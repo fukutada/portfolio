@@ -471,6 +471,10 @@ footer {
     width: 100%;
   }
 
+  .scroll-top {
+    display: none;
+  }
+
   .back_icon img {
     display: none;
   }
