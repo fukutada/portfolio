@@ -42,6 +42,7 @@ header{
     z-index: 999;
 }
 .header{
+    height: 90px;
     &_title{
         font-size: 32px;
     }
@@ -240,6 +241,7 @@ main{
         vertical-align: bottom
         
     }
+    //制作物
     &_cap{
         font-size: 16px;
         font-weight: bold;
@@ -253,7 +255,6 @@ main{
 //作品のカテゴリー表示
 .category{
     @include flex(flex-start,center );
-    
     &_text{
         font-size: 12px;
         margin-top: 10px;
@@ -318,18 +319,18 @@ main{
     margin-top: 40px;
 }
 
-.back_icon img{
-    //位置の固定
-    position: fixed ;
-    bottom: 0px;
-    right: 40px;
-    opacity: 0.3;
-    width: 200px;
-    height: auto;
-    //最背面に配置
-    z-index: 1;
+// .back_icon img{
+//     //位置の固定
+//     position: fixed ;
+//     bottom: 0px;
+//     right: 40px;
+//     opacity: 0.3;
+//     width: 200px;
+//     height: auto;
+//     //最背面に配置
+//     z-index: 1;
 
-}
+// }
 
 // base　article(記事）
 
@@ -398,7 +399,7 @@ main{
     }
     &_text{
         max-width: 800px;
-        padding: 20px;
+        padding: 10px 20px;
         margin: 40px auto;
         margin-left: 0;
         //記事本文の領域表示
@@ -499,6 +500,7 @@ footer{
         }
     }
     main{
+        //ヘッダー100px込
         margin-top: 120px;
     }
     .openbtn1{

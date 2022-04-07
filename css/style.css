@@ -26,6 +26,9 @@ header {
   z-index: 999;
 }
 
+.header {
+  height: 90px;
+}
 .header_title {
   font-size: 32px;
 }
@@ -283,16 +286,6 @@ main {
   margin-top: 40px;
 }
 
-.back_icon img {
-  position: fixed;
-  bottom: 0px;
-  right: 40px;
-  opacity: 0.3;
-  width: 200px;
-  height: auto;
-  z-index: 1;
-}
-
 .create_title {
   border-bottom: 3px solid #FFCE00;
   font-size: 52px;
@@ -354,7 +347,7 @@ main {
 }
 .work_text {
   max-width: 800px;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 40px auto;
   margin-left: 0;
   border-left: #A750F0 5px solid;
