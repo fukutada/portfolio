@@ -37,6 +37,7 @@ header{
     color: #fff;
     @include flex(flex-start, center);
     padding: 30px 10px 10px 10px;
+    //画面上部固定
     position: fixed ;
     width: 100%;
     z-index: 999;
@@ -196,6 +197,7 @@ header{
 main{
     @include inner();
     //背景画像より上に来るようにする
+    background-color: #fff;
     position: relative;
     z-index: 5;
     
@@ -220,10 +222,14 @@ main{
     margin-bottom: 40px;
     background-color: #fff;
     z-index: 10;
+    &:hover{
+        background-color: #eee;
+    }
     //作品リンク
     &_link{
         color: #000;
         text-decoration: none;
+        
     }
     //作品タイトル
     &_title{
@@ -241,6 +247,18 @@ main{
         vertical-align: bottom
         
     }
+    //作品のカテゴリー表示
+    &_category{
+        @include flex(flex-start,center );
+        &_text{
+            font-size: 12px;
+            margin-top: 10px;
+            margin-left: 10px;
+            &:first-child{
+                margin-left: 0;
+            }
+        }
+    }
     //制作物
     &_cap{
         font-size: 16px;
@@ -252,24 +270,14 @@ main{
 }
 
 
-//作品のカテゴリー表示
-.category{
-    @include flex(flex-start,center );
-    &_text{
-        font-size: 12px;
-        margin-top: 10px;
-        margin-left: 10px;
-        &:first-child{
-            margin-left: 0;
-        }
-    }
-   
-}
+
 
 
 // about
 .about{
+    background-color: #fff;
     font-size: 14px;
+    margin: 20px 0;
     position: relative;
     z-index: 40;
     &_flex{
@@ -292,6 +300,7 @@ main{
         font-size: 40px;
         font-weight: bold;
         text-align: center;
+        line-height: 1;
     &_en{
         text-align: center;
         margin-bottom: 20px;
@@ -316,7 +325,9 @@ main{
 .git{
     font-size: 12px;
     text-align: right;
-    margin-top: 40px;
+    :last-child{
+        margin-top: 10px;
+    }
 }
 
 // .back_icon img{
@@ -361,7 +372,6 @@ main{
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
-        border-bottom: #000 1px solid;
         margin-left: 20px;
     }
     &_dis{
@@ -373,7 +383,6 @@ main{
         font-size: 16px;
         line-height: 1.2;
         text-align: center;
-        border-bottom: #000 1px solid;
         margin-left: 20px;
     }
     &_link{
@@ -402,8 +411,6 @@ main{
         padding: 10px 20px;
         margin: 40px auto;
         margin-left: 0;
-        //記事本文の領域表示
-        border-left: #A750F0 5px solid;
     }
     &_flex{
         @include flex( );
@@ -521,6 +528,16 @@ footer{
         }
     }
     .article{
+        &_category{
+            justify-content: center;
+        &_text{
+            background-color: rgba(167,80,240,0.35);//透明度変換
+            padding: 5px;
+            text-align: center;
+            border-radius: 20px;
+            min-width: 50px;       
+        }
+    }
         &_cap{
             text-align: center;
             margin: 10px 0 0 0;
@@ -601,6 +618,14 @@ footer{
             max-width: 400px;
             margin: 0;
         }
+        &_category{
+            &_text{
+                background-color: rgba(167,80,240,0.35);//透明度変換
+                padding: 5px;
+                border-radius: 20px;
+                min-width: 50px;       
+            }
+        }
         &_info{
             width: 40%;
             max-width: 400px;
@@ -608,14 +633,7 @@ footer{
         }
        
     }
-    .category{
-        &_text{
-            background-color: rgba(167,80,240,0.35);//透明度変換
-            padding: 5px;
-            border-radius: 20px;
-            min-width: 50px;       
-        }
-    }
+   
     .about{
         //アイコン
         &_icon{
