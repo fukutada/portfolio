@@ -1,8 +1,10 @@
 @charset "UTF-8";
 body {
+  color: #000;
   font-family: roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  margin: 0;
 }
 
 img {
@@ -21,7 +23,7 @@ header {
   padding: 30px 10px 10px 10px;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
 }
 
 .header_title {
@@ -101,7 +103,7 @@ header {
   position: fixed;
   z-index: 9999;
   /*ボタンを最前面に*/
-  top: 20px;
+  top: 30px;
   right: 10px;
   cursor: pointer;
   width: 50px;
@@ -179,13 +181,15 @@ main {
 
 .caption {
   font-size: 32px;
+  line-height: 1.2;
   margin-top: 40px;
   border-bottom: #000 2px solid;
   margin-bottom: 20px;
 }
 
 .article {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   background-color: #fff;
   z-index: 10;
 }
@@ -195,6 +199,7 @@ main {
 }
 .article_title {
   font-size: 32px;
+  line-height: 1.4;
   font-weight: bold;
   text-align: center;
   padding-top: 10px;
@@ -268,7 +273,13 @@ main {
 .about_comment {
   border: #000 solid 1px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.git {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 40px;
 }
 
 .back_icon img {
@@ -284,6 +295,7 @@ main {
 .create_title {
   border-bottom: 3px solid #FFCE00;
   font-size: 52px;
+  line-height: 1.2;
   padding-left: 20px;
   margin: 40px 0;
 }
@@ -302,6 +314,7 @@ main {
 .flex_time {
   width: 100px;
   font-size: 16px;
+  line-height: 1.2;
   text-align: center;
   border-bottom: #000 1px solid;
   margin-left: 20px;
@@ -315,6 +328,7 @@ main {
 .flex_text {
   width: 100px;
   font-size: 16px;
+  line-height: 1.2;
   text-align: center;
   border-bottom: #000 1px solid;
   margin-left: 20px;
@@ -341,9 +355,8 @@ main {
   max-width: 800px;
   padding: 20px;
   margin: 40px auto;
-  border-left: #000 1px solid;
-  border-right: #000 1px solid;
-  background-color: #eee;
+  margin-left: 0;
+  border-left: #A750F0 5px solid;
 }
 .work_flex {
   display: flex;
@@ -429,7 +442,13 @@ footer {
   }
 
   main {
-    margin-top: 100px;
+    margin-top: 120px;
+  }
+
+  .openbtn1 {
+    position: fixed;
+    top: 30px;
+    right: 10px;
   }
 
   .create {
@@ -445,6 +464,9 @@ footer {
     margin: 0;
   }
 
+  .work {
+    margin: 0;
+  }
   .work_img {
     width: 100%;
   }
@@ -474,9 +496,9 @@ footer {
 
   main {
     width: 90%;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 120px;
   }
 
   .main {
