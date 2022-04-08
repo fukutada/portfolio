@@ -198,8 +198,12 @@ main {
   background-color: #fff;
   z-index: 10;
 }
-.article:hover {
-  background-color: #eee;
+.article_flex {
+  display: inline-block;
+  transition: 0.3s;
+}
+.article_flex:hover {
+  transform: scale(1.1);
 }
 .article_link {
   color: #000;
@@ -247,6 +251,10 @@ main {
   z-index: 40;
 }
 .about_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 .about_icon {
@@ -287,11 +295,34 @@ main {
 }
 
 .git {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.git_link {
   font-size: 12px;
   text-align: right;
 }
-.git :last-child {
+.git_link :last-child {
   margin-top: 10px;
+}
+.git_link a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.git_link a:hover {
+  transform: scale(1.1);
+}
+.git_link a:last-child {
+  margin-left: 20px;
 }
 
 .create_title {
@@ -334,7 +365,19 @@ main {
   margin-left: 20px;
 }
 .flex_link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  padding: 5px 10px;
   margin-left: 30px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.flex_link:hover {
+  transform: scale(1.1);
 }
 
 .work {
@@ -418,11 +461,13 @@ main {
   color: #fff;
   line-height: 50px;
   text-align: center;
+  transition: 0.3s;
 }
 
 .scroll-top:hover {
   cursor: pointer;
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 footer {
@@ -569,7 +614,7 @@ footer {
   .about_icon {
     max-width: 400px;
   }
-  .about_flex {
+  .about_flexall {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
