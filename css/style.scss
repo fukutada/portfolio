@@ -15,9 +15,12 @@
     align-items: $a;
 }
 
+
+//remの関数
 @function rem($value){
     @return ($value/16)+rem;
-  }
+}
+
 
 // 共通
 body{
