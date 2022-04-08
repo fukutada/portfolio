@@ -2,7 +2,7 @@
 body {
   color: #000;
   font-family: roboto, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
 }
@@ -27,15 +27,15 @@ header {
 }
 
 .header {
-  height: 90px;
+  height: 5.625rem;
 }
 .header_title {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .header_sub {
-  font-size: 12px;
-  margin-top: 15px;
-  margin-left: 10px;
+  font-size: 0.75rem;
+  margin-top: 0.9375rem;
+  margin-left: 0.625rem;
 }
 .header_link {
   color: #fff;
@@ -159,12 +159,12 @@ header {
   text-align: center;
 }
 .nav_title {
-  font-size: 32px;
+  font-size: 2rem;
   border-bottom: #333 solid 1px;
   margin-bottom: 10px;
 }
 .nav_sub {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 .nav_icon {
@@ -184,7 +184,7 @@ main {
 }
 
 .caption {
-  font-size: 32px;
+  font-size: 2rem;
   opacity: 0.7;
   line-height: 1.2;
   margin-top: 40px;
@@ -210,7 +210,7 @@ main {
   text-decoration: none;
 }
 .article_title {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.4;
   font-weight: bold;
   text-align: center;
@@ -219,6 +219,7 @@ main {
 }
 .article_img {
   width: 90%;
+  height: auto;
   margin: 0 auto;
   vertical-align: bottom;
 }
@@ -229,7 +230,7 @@ main {
   align-items: center;
 }
 .article_category_text {
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -237,7 +238,7 @@ main {
   margin-left: 0;
 }
 .article_cap {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   margin-top: 20px;
@@ -245,7 +246,7 @@ main {
 
 .about {
   background-color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 20px 0;
   position: relative;
   z-index: 40;
@@ -271,7 +272,7 @@ main {
   margin: 0 auto;
 }
 .about_name {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -281,11 +282,11 @@ main {
   margin-bottom: 20px;
 }
 .about_title {
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 10px;
 }
 .about_text {
-  font-size: 12px;
+  font-size: 0.75rem;
   padding-top: 8px;
 }
 .about_comment {
@@ -301,7 +302,7 @@ main {
   align-items: center;
 }
 .git_link {
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: right;
 }
 .git_link :last-child {
@@ -309,7 +310,7 @@ main {
 }
 .git_link a {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   background: #333;
@@ -327,7 +328,7 @@ main {
 
 .create_title {
   border-bottom: 3px solid #FFCE00;
-  font-size: 52px;
+  font-size: 3.25rem;
   line-height: 1.2;
   padding-left: 20px;
   margin: 40px 0;
@@ -341,12 +342,12 @@ main {
   margin-top: 20px;
 }
 .flex_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-right: 40px;
 }
 .flex_time {
   width: 100px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
   text-align: center;
   margin-left: 20px;
@@ -359,14 +360,14 @@ main {
 }
 .flex_text {
   width: 100px;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
   text-align: center;
   margin-left: 20px;
 }
 .flex_link {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
   background: #333;
@@ -384,11 +385,11 @@ main {
   margin: 60px;
 }
 .work_first {
-  font-size: 32px;
+  font-size: 2rem;
   margin: 40px 0;
 }
 .work_title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   padding-left: 20px;
   margin: 40px 0;
@@ -419,7 +420,7 @@ main {
   background-color: #eee;
 }
 .work_use_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 0;
   text-align: center;
@@ -497,6 +498,10 @@ footer {
     right: 10px;
   }
 
+  .flex_div {
+    margin: 0 auto;
+  }
+
   #g-nav ul {
     width: 100%;
     max-width: 200px;
@@ -506,7 +511,7 @@ footer {
     margin-top: 60px;
   }
   .create_title {
-    font-size: 32px;
+    font-size: 2rem;
     margin-top: 60px;
   }
 
@@ -549,6 +554,7 @@ footer {
   }
 
   .flex_dis {
+    justify-content: space-evenly;
     margin-top: 20px;
   }
 
@@ -579,7 +585,7 @@ footer {
   }
 
   .caption {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .article {
