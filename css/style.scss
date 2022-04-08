@@ -337,7 +337,10 @@ main{
 
 //contact
 .contact{
-    @include inner();
+
+    &_main{
+        @include inner();
+    }
     &_title{
         font-size: rem(16);
         line-height: 1;
