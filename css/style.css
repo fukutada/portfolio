@@ -218,7 +218,7 @@ main {
   border-bottom: #000 solid 1px;
 }
 .article_img {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   vertical-align: bottom;
 }
@@ -596,7 +596,7 @@ footer {
   }
   .article_img {
     width: 50%;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0;
   }
   .article_category_text {
