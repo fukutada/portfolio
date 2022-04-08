@@ -501,6 +501,9 @@ footer {
   .flex_div {
     margin: 0 auto;
   }
+  .flex_link {
+    margin-top: 5px;
+  }
 
   #g-nav ul {
     width: 100%;
