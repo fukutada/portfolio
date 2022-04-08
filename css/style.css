@@ -283,6 +283,7 @@ main {
 }
 .about_title {
   font-size: 1rem;
+  text-align: center;
   margin-top: 10px;
 }
 .about_text {
@@ -295,11 +296,29 @@ main {
   margin: 20px 0;
 }
 
+.contact {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact_title {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.contact_text {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .git {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 40px;
 }
 .git_link {
   font-size: 0.75rem;

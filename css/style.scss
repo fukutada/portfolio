@@ -321,12 +321,12 @@ main{
     }
     &_title{
         font-size: rem(16);
+        text-align: center;
         margin-top: 10px;
     }
     &_text{
         font-size:rem(12);
         padding-top: 8px;
-   
     }
     &_comment{
         border: #000 solid 1px;
@@ -335,8 +335,27 @@ main{
     }
 }
 
+//contact
+.contact{
+    @include inner();
+    &_title{
+        font-size: rem(16);
+        line-height: 1;
+        font-weight: bold;
+
+    }
+    &_text{
+        font-size: rem(16);
+        line-height: 1;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      
+    }
+}
+
 .git{
     @include flex(flex-end, center);
+    margin-top: 40px;
 &_link{
     font-size:rem(12);
     text-align: right;
@@ -362,19 +381,6 @@ main{
     }
 }
 }
-
-// .back_icon img{
-//     //位置の固定
-//     position: fixed ;
-//     bottom: 0px;
-//     right: 40px;
-//     opacity: 0.3;
-//     width: 200px;
-//     height: auto;
-//     //最背面に配置
-//     z-index: 1;
-
-// }
 
 // base　article(記事）
 
