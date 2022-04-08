@@ -510,6 +510,10 @@ footer {
     margin-top: 60px;
   }
 
+  .article_img {
+    margin: 0 auto;
+    display: block;
+  }
   .article_category {
     justify-content: center;
   }
@@ -530,6 +534,10 @@ footer {
   }
   .work_img {
     width: 100%;
+  }
+
+  .git {
+    justify-content: space-between;
   }
 
   .scroll-top {
@@ -561,7 +569,7 @@ footer {
 
   main {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 120px;
   }

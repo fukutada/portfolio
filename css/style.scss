@@ -568,6 +568,10 @@ footer{
         }
     }
     .article{
+        &_img{
+            margin: 0 auto;
+            display: block;
+        }
         &_category{
             justify-content: center;
         &_text{
@@ -588,6 +592,10 @@ footer{
         &_img{
              width: 100%;
         }
+    }
+
+    .git{
+        justify-content: space-between;
     }
 
     .scroll-top{
@@ -627,7 +635,7 @@ footer{
     }
     
     main{
-        @include inner(900px);
+        @include inner(1000px);
         margin-top: 120px;
     }
     .main{
