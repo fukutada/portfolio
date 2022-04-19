@@ -122,6 +122,10 @@ header{
   display: block;
   letter-spacing: 0.1em;
   font-weight: bold;
+
+  &:hover{
+    transform: scale(1.2);
+  }
 }
 
 /*========= ボタンのためのCSS ===============*/
@@ -321,6 +325,7 @@ main{
     }
     &_title{
         font-size: rem(16);
+        font-weight: bold;
         text-align: center;
         margin-top: 10px;
     }
@@ -723,16 +728,6 @@ footer{
             max-width: 400px;
             padding: 20px 40px;
         }
-    }
-    .back_icon img{
-        position: fixed ;
-        bottom: 0px;
-        right: 40px;
-        opacity: 0.3;
-        width: 200px;
-        height: auto;
-        //最背面表示
-        z-index: 1;
     }
 }
 

@@ -100,6 +100,9 @@ header {
   letter-spacing: 0.1em;
   font-weight: bold;
 }
+#g-nav li a:hover {
+  transform: scale(1.2);
+}
 
 /*========= ボタンのためのCSS ===============*/
 .openbtn1 {
@@ -283,6 +286,7 @@ main {
 }
 .about_title {
   font-size: 1rem;
+  font-weight: bold;
   text-align: center;
   margin-top: 10px;
 }
@@ -661,16 +665,6 @@ footer {
     width: 100%;
     max-width: 400px;
     padding: 20px 40px;
-  }
-
-  .back_icon img {
-    position: fixed;
-    bottom: 0px;
-    right: 40px;
-    opacity: 0.3;
-    width: 200px;
-    height: auto;
-    z-index: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
