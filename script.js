@@ -12,13 +12,13 @@ $(".openbtn1").click(function () {//ボタンがクリックされたら
 
 
   // スクロールトップボタン
-scrollTop('js-scroll-top', 150); // 遅すぎるとガクガクになるので注意
+scrollTop('js-scroll-top', 150); 
 
 function scrollTop(el, duration) {
   const target = document.getElementById(el);
   target.addEventListener('click', function() {
     let currentY = window.pageYOffset; // 現在のスクロール位置を取得
-    let step = duration/currentY > 1 ? 10 : 100; // 三項演算子
+    let step = duration/currentY > 1 ? 10 : 100;
     let timeStep = duration/currentY * step; // スクロール時間
     let intervalId = setInterval(scrollUp, timeStep);
     // timeStepの間隔でscrollUpを繰り返す。
