@@ -524,6 +524,13 @@ main{
    
 }
 
+iframe{
+    width: 100%;
+}
+.iframe{
+    width: 100%;
+}
+
 
   //トップに戻る
 .scroll-top {
@@ -539,10 +546,11 @@ main{
     line-height: 50px;
     text-align: center;
     transition: .3s;
+    opacity: 0.7; 
   }
   .scroll-top:hover {
     cursor: pointer;
-    opacity: 0.7; 
+    opacity: 1; 
     transform: scale(1.1);
 
   }
@@ -578,10 +586,13 @@ footer{
     }
     .flex{
         &_div{
-          margin: 0 auto;
+          margin-right: auto;
         }
         &_link{
             margin-top: 5px;
+        }
+        &_text{
+            margin-top: 10px;
         }
     }
     
@@ -593,6 +604,7 @@ footer{
         margin-top: 60px;
         &_title{
              font-size:rem(32);
+             padding: 5px 0 5px 20px ;
              margin-top: 60px;
         }
     }
@@ -616,11 +628,28 @@ footer{
             margin: 10px 0 0 0;
         }
     }
+    .about{
+       
+        &_sub{
+            max-width: 400px;
+            width: 100%;
+            border: none;
+        }
+    }
+
     .work{
         margin: 0;
         &_img{
+           
              width: 100%;
         }
+    }
+
+    iframe{
+        width: 100%;
+    }
+    .iframe{
+        width: 100%;
     }
 
     .git{
@@ -639,7 +668,7 @@ footer{
     .flex{
         &_dis{
             justify-content: space-evenly;
-            margin-top: 20px;
+            align-items: center;
         }
     }
 
