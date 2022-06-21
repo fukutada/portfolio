@@ -31,8 +31,8 @@
                     <li><a href="article2.html" class="nav_sub">ブログ Supply Sta.</a></li>  
                     <li><a href="article3.html" class="nav_sub">おやかんさま</a></li> 
                     <li><a href="article4.html" class="nav_sub">漫画アプリUIデザイン</a></li> 
-                    <li><a href="article5.html" class="nav_sub">和風カフェサイト<br>デザイン</a></li>
-                    <li><a href="article6.html" class="nav_sub">お天気アプリ</a></li>    
+                    <li><a href="article5.html" class="nav_sub">和風カフェサイト<br>デザイン</a></li> 
+                    <li><a href="article6.html" class="nav_sub">お天気アプリ</a></li>   
                     <li><a href="index.html#about" class="nav_title">About</a></li>  
                     <img src="img/icon/20488.png" alt="" class="nav_icon">
                 </ul>
@@ -40,17 +40,17 @@
         </nav>
     </header>
     <main>
-        <h2 class="create_title">和風カフェサイトデザイン</h2>
+        <h2 class="create_title">お天気アプリ</h2>
         <div class="flex">
      <h3 class="flex_title">作成期間</h3>
-     <p class="flex_time">約17時間</p>
+     <p class="flex_time">約15時間</p>
         </div>
         <div class="flex">
          <h3 class="flex_title">使用技術</h3>
          <div class="flex_dis">
-         <p class="flex_text">XD</p>
-         <p class="flex_text">Illustator</p>
-         <p class="flex_text">Photoshop</p>
+         <p class="flex_text">HTML+CSS</p>
+         <p class="flex_text">JavaScript</p>
+         
          </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 <h3 class="work_title">作品について</h3>
                 <img src="img/cafe/first.jpg" alt="" class="work_img">
                 <p class="work_text">
-                    架空のカフェのWebデザインになります。コンセプトは和風カフェになっています。和風カフェということでメインカラーとアクセントカラーで桜をイメージしています。ファーストビューでは奥行きのある写真を使うことで、画面に立体感を作り、引き込まれるような構図にしました。サイト全体にも影をつけることで奥行きを出すことを意識しています。
+                   気象庁の天気予報APIを利用して作ったお天気アプリです。３日間の詳しい天気と今日の降水率、一週間の天気を取得して表示しています。また天気コードを取得することで、天気によって背景画像などが変わります。
                 </p>
                 <p class="work_title">デザイン</p>
                 <div class="work_flex">
@@ -71,11 +71,19 @@
                     <img src="img/cafe/cafe5.png" alt="" class="work_img5"> 
                 </div>
                 <p class="work_text">
-                    客層はカフェということで女性を主体にイメージしています。全体的に丸角を使用し柔らかい印象になるようにしました。画像の形を丸形にすることで、料理の皿や日本建築の丸窓をイメージしています。ディナーでは客層が大人の男性などの落ち着いた雰囲気の年齢層になると思ったので、メインカラーを黒、アクセントカラーを金にすることで格式高い、落ち着いた印象を与えるようにしています。飾りにはカフェの場合はイメージカラーと合うような桜の花びらを飾り、ディナーには竹をあてがいました。
+                   天気コード（晴れ100番台、曇り200番台、雨300番台、雪400番台）によってヘッダーや背景の色が変わるようになっています。晴れの日には空の画像とオレンジ色の背景、雨の日は雨のヘッダーと水色の背景になるなど、天気毎に変わるよう設定してあります。
                 </p>
-                <p class="work_title">仕様書</p>
-                <img src="img/cafe/siyousyo.png" alt="" class="work_img">
-                <img src="img/cafe/14_fukuta_cafetriden.jpg" alt="" class="work_img">
+                <p class="work_title">動画</p>
+               
+                <p class="work_text">
+                    youtubeはIframeで流すようにしていて、天候に合わせて流す曲をランダムに変えています。YouTubeのIDを天候ごとに分けた配列に入れています。天候コードに対応した配列を４つ用意してあり、対応する配列から、ランダムでIDを選びます。そのIDをIframeに代入して、動画を再生できるようにしています。
+                </p>
+                <p class="work_title">猫</p>
+                <img src="" alt="" class="work_img">
+                <img src="" alt="" class="work_img">
+                <p class="work_text">
+                   雨や雪の日は気分が沈みがちになると思うので、元気が出るように、ランダムに猫の画像がでるボタンがあります。晴れの日と曇りの日は「猫がいません」と出て、押しても反応しませんが、雨と雪の日は「猫がいます」と表示され押すことができます。画像はCatAPIから取得しています。
+                </p>
              </section>
             <div id="js-scroll-top" class="scroll-top">TOP</div>
            
