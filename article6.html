@@ -53,37 +53,60 @@
          
          </div>
             </div>
+            <div class="flex">
+                <h3 class="flex_title">作品URL</h3>
+                <div class="flex_div">
+                    <a href="https://odd-yoron-0720.littlestar.jp/weather/" class="flex_link" target="_blank">作品へ</a>
+             <a href="https://github.com/fukutada/weather/tree/main" class="flex_link" target="_blank">Githubへ</a>
+             </div>
+             </div>
         </div>
         
      </div>
             <section class="work">
                 <h3 class="work_title">作品について</h3>
-                <img src="img/cafe/first.jpg" alt="" class="work_img">
+                <img src="img/weather/first.jpg" alt="" class="work_img">
                 <p class="work_text">
                    気象庁の天気予報APIを利用して作ったお天気アプリです。３日間の詳しい天気と今日の降水率、一週間の天気を取得して表示しています。また天気コードを取得することで、天気によって背景画像などが変わります。
                 </p>
                 <p class="work_title">デザイン</p>
                 <div class="work_flex">
-                    <img src="img/cafe/cafe1.png" alt="" class="work_img5">
-                    <img src="img/cafe/cafe2.png" alt="" class="work_img5">
-                    <img src="img/cafe/cafe3.png" alt="" class="work_img5">
-                    <img src="img/cafe/cafe4.png" alt="" class="work_img5">
-                    <img src="img/cafe/cafe5.png" alt="" class="work_img5"> 
+                    <img src="./img/weather/SVG/sunny.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/cloud.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/rain.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/snow.svg" alt="" class="work_img4">
+                    
                 </div>
                 <p class="work_text">
                    天気コード（晴れ100番台、曇り200番台、雨300番台、雪400番台）によってヘッダーや背景の色が変わるようになっています。晴れの日には空の画像とオレンジ色の背景、雨の日は雨のヘッダーと水色の背景になるなど、天気毎に変わるよう設定してあります。
                 </p>
                 <p class="work_title">動画</p>
-               
+                <div class="work_flex">
+                    <img src="./img/weather/SVG/video_sun.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/video_c.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/video_r.svg" alt="" class="work_img4">
+                    <img src="./img/weather/SVG/video_s.svg" alt="" class="work_img4">
+                    
+                </div>
                 <p class="work_text">
-                    youtubeはIframeで流すようにしていて、天候に合わせて流す曲をランダムに変えています。YouTubeのIDを天候ごとに分けた配列に入れています。天候コードに対応した配列を４つ用意してあり、対応する配列から、ランダムでIDを選びます。そのIDをIframeに代入して、動画を再生できるようにしています。
+                    youtubeはiframeで流すようにしていて、天候に合わせて流す曲をランダムに変えています。YouTubeのIDを天候ごとに分けた配列に入れています。天候コードに対応した配列を４つ用意してあり、対応する配列から、ランダムでIDを選びます。そのIDをiframeに代入して、動画を再生できるようにしています。
                 </p>
-                <p class="work_title">猫</p>
-                <img src="" alt="" class="work_img">
-                <img src="" alt="" class="work_img">
+                <p class="work_title">API
+                </p>
                 <p class="work_text">
-                   雨や雪の日は気分が沈みがちになると思うので、元気が出るように、ランダムに猫の画像がでるボタンがあります。晴れの日と曇りの日は「猫がいません」と出て、押しても反応しませんが、雨と雪の日は「猫がいます」と表示され押すことができます。画像はCatAPIから取得しています。
+                    今回は、気象庁のお天気API、CatAPIの2つのAPIを使用しています。天気APIで現在の天気の情報を読み込んでいます。天気アプリのなので、最初に今日を含めた３日間の天気、今日の降水確率、一週間の天気を表示します。
+                 </p>
+                 <div class="work_flex">
+                <img src="./img/weather/SVG/btn_no.svg" alt="" class="work_img2">
+                <img src="./img/weather/SVG/btn.svg" alt="" class="work_img2">
+                </div>
+                <p class="work_text">
+                   雨や雪の日は気分が沈みがちになると思うので、元気が出るように、ランダムに猫の画像を表示するAPIを使用した機能があります。ボタンの上には晴れの日と曇りの日は「猫がいません」と表示され、雨と雪の日は「猫がいます」と表示されます。雨と雪の日の場合のみ、ボタンを押すことで反応し、下に猫の画像が出るようになっています。
                 </p>
+                <div class="work_flex">
+                    <img src="./img/weather/SVG/cat_1.svg" alt="" class="work_img2">
+                    <img src="./img/weather/SVG/cat_2.svg" alt="" class="work_img2">
+                    </div>
              </section>
             <div id="js-scroll-top" class="scroll-top">TOP</div>
            
@@ -97,6 +120,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
 <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-1-11/js/5-1-11.js"></script>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 <script src="script.js"></script>
 </body>
 </html>
